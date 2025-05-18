@@ -1,0 +1,12 @@
+print("Entry Ticket Checker")
+age = int(input("How old are you?: "))
+ticket = input("Do you have a ticket?: yes/no ").lower()
+
+if age < 12 and ticket == "yes":
+    print("You are too young. You must be accompanied by an adult.")
+elif age >= 65 and ticket == "yes":
+    print("Free entry for seniors!")
+elif age >= 12 and ticket == "yes":
+    print("You are allowed to enter. Enjoy the movie!")
+else:
+    print("Entry denied. You need a ticket.")
